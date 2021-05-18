@@ -1,4 +1,6 @@
 song="";
+joke="";
+leftWrist=0;
 leftwristX=0;
 leftwristY=0;
 RightwristX=0;
@@ -27,10 +29,15 @@ image(video,0,0,600,500);
 }
 function preload(){
 song=loadSound("music.mp3");
+joke=loadSound("joker BGM.mp3")
 }
 function play(){
 song.play();
 }
+function joke(){
+    joke.play()
+}
 function stop(){
     song.stop();
+    joke.stop()
 }
